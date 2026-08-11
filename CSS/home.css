@@ -1,71 +1,92 @@
-body{
+/* ======================== */
+/* BODY */
+/* ======================== */
+
+body {
+
     background-image: url("../Media/homebg.jpg");
+
     background-size: cover;
+
     background-position: center;
+
     background-repeat: no-repeat;
+
     min-height: 100vh;
+
     display: flex;
+
     justify-content: center;
-    align-items: center;   
+
+    align-items: center;
+
     margin: 0;
-}
 
-#teacherBtn {
-    margin-top: 15px;
-    padding: 12px 25px;
-    border: none;
-    border-radius: 10px;
-    background: #6c63ff;
-    color: white;
-    font-size: 16px;
-    cursor: pointer;
-    transition: 0.2s;
-}
-
-#teacherBtn:hover {
-    background: #574fd6;
-}
-
-#teacherForm input {
-    width: 100%;
-    padding: 12px;
-    margin: 10px 0;
-    border: 1.5px solid #aaa;
-    border-radius: 8px;
-    font-size: 16px;
-    box-sizing: border-box;
-}
-
-#teacherAccess {
-    margin-top: 10px;
-    padding: 12px 25px;
-    border: none;
-    border-radius: 10px;
-    background: #1e90ff;
-    color: white;
-    font-size: 16px;
-    cursor: pointer;
-}
-
-#teacherAccess:hover {
-    background: #0b75d1;
 }
 
 
-h1{
-    color: white;
+/* ======================== */
+/* MAIN CONTAINER */
+/* ======================== */
+
+.container {
+
+    width: 450px;
+
+    padding: 25px 40px 40px 40px;
+
+    margin: auto;
+
+    background: rgba(255,255,255,0.12);
+
+    backdrop-filter: blur(12px);
+
+    border-radius: 20px;
+
     text-align: center;
-    margin-bottom: 10px;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+
 }
 
-hr{
-    margin-top: 5px;
-    margin-bottom: 45px;
+
+/* ======================== */
+/* MAIN TITLE */
+/* ======================== */
+
+h1 {
+
+    color: white;
+
+    text-align: center;
+
+    margin-bottom: 10px;
+
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+
 }
+
+
+/* ======================== */
+/* MAIN LINE */
+/* ======================== */
+
+hr {
+
+    margin-top: 5px;
+
+    margin-bottom: 45px;
+
+}
+
+
+/* ======================== */
+/* CREATE + JOIN BUTTONS */
+/* ======================== */
 
 #createBtn,
-#joinBtn{
+#joinBtn,
+#teacherBtn {
     width: 240px;
     height: 55px;
     display: block;
@@ -82,119 +103,301 @@ hr{
 }
 
 #createBtn:hover,
-#joinBtn:hover{
+#joinBtn:hover,
+#teacherBtn:hover {
     background: #00c2ff;
     color: white;
     transform: scale(1.05);
     box-shadow: 0 8px 20px rgba(0,0,0,0.35);
 }
 
-.container{
-    width: 450px;
-    padding: 25px 40px 40px 40px;
-    margin: auto;
-    background: rgba(255,255,255,0.12);
-    backdrop-filter: blur(12px);
-    border-radius: 20px;
-    text-align: center;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
-}
+/* ======================== */
+/* GENERAL INPUT */
+/* ======================== */
 
-input{
+input {
+
     width: 280px;
+
     height: 45px;
-    text-align:center;
+
+    text-align: center;
+
     padding: 0 15px;
+
     margin: 12px 0;
+
     border: 2px solid #3aa8ff;
+
     border-radius: 12px;
+
     background: rgba(255,255,255,0.85);
+
     font-size: 18px;
+
     outline: none;
+
+    box-sizing: border-box;
+
 }
 
-input::placeholder{
+
+input::placeholder {
+
     color: #7a7a7a;
-    font-size:16px;
+
+    font-size: 16px;
+
 }
 
-input:focus{
+
+input:focus {
+
     border-color: #00d9ff;
+
     box-shadow: 0 0 10px rgba(0,217,255,.5);
+
 }
 
-#create{
+
+/* ======================== */
+/* CREATE BUTTON */
+/* ======================== */
+
+#create {
+
     width: 180px;
+
     height: 50px;
 
     margin-top: 10px;
 
     background: #25E6F7;
+
     border: 2px solid #007BFF;
+
     border-radius: 15px;
 
     font-size: 25px;
+
     font-weight: bold;
 
     cursor: pointer;
 
     transition: .3s;
+
 }
 
-#create:hover{
+
+#create:hover {
+
     background: #0095ff;
+
     color: white;
+
     transform: translateY(-3px);
+
 }
 
-#createTitle{
-    font-size: 36px;
+
+/* ======================== */
+/* JOIN BUTTON */
+/* ======================== */
+
+#join {
+
+    width: 180px;
+
+    height: 50px;
+
+    margin-top: 10px;
+
+    background: #25E6F7;
+
+    border: 2px solid #007BFF;
+
+    border-radius: 15px;
+
+    font-size: 25px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: .3s;
+
+}
+
+
+#join:hover {
+
+    background: #0095ff;
+
     color: white;
+
+    transform: translateY(-3px);
+
+}
+
+
+/* ======================== */
+/* CREATE TITLE */
+/* ======================== */
+
+#createTitle {
+
+    font-size: 36px;
+
+    color: white;
+
     text-align: center;
 
     margin-top: 0;
+
     margin-bottom: 20px;
 
     text-shadow: 2px 2px 4px rgba(0,0,0,.5);
+
 }
 
 
-#createLine{
+#createLine {
+
     margin-top: 10px;
+
     margin-bottom: 25px;
+
 }
 
-#joinTitle{
+
+/* ======================== */
+/* JOIN TITLE */
+/* ======================== */
+
+#joinTitle {
+
     font-size: 36px;
+
     color: white;
+
     text-align: center;
 
     margin-top: 0;
+
     margin-bottom: 20px;
 
     text-shadow: 2px 2px 4px rgba(0,0,0,.5);
+
 }
 
-#join{
+
+#joinLine {
+
+    margin-top: 10px;
+
+    margin-bottom: 25px;
+
+}
+
+
+/* ======================== */
+/* TEACHER TITLE */
+/* ======================== */
+
+#teacherTitle {
+
+    font-size: 36px;
+
+    color: white;
+
+    text-align: center;
+
+    margin-top: 0;
+
+    margin-bottom: 20px;
+
+    text-shadow: 2px 2px 4px rgba(0,0,0,.5);
+
+}
+
+
+#teacherLine {
+
+    margin-top: 10px;
+
+    margin-bottom: 25px;
+
+}
+
+
+/* ======================== */
+/* TEACHER FORM INPUT */
+/* ======================== */
+
+#teacherForm input {
+
+    width: 280px;
+
+    height: 45px;
+
+    padding: 0 15px;
+
+    margin: 12px 0;
+
+    border: 2px solid #3aa8ff;
+
+    border-radius: 12px;
+
+    background: rgba(255,255,255,0.85);
+
+    font-size: 18px;
+
+    text-align: center;
+
+    outline: none;
+
+    box-sizing: border-box;
+
+}
+
+
+/* ======================== */
+/* TEACHER ENTER GROUP */
+/* ======================== */
+
+#teacherAccess {
+
     width: 180px;
+
     height: 50px;
 
     margin-top: 10px;
 
-    background: #25E6F7;
-    border: 2px solid #007BFF;
+    background: #1e90ff;
+
+    border: 2px solid #0b4ea2;
+
     border-radius: 15px;
 
-    font-size: 25px;
+    color: white;
+
+    font-size: 22px;
+
     font-weight: bold;
 
     cursor: pointer;
 
     transition: .3s;
+
 }
 
-#join:hover{
-    background: #0095ff;
-    color: white;
+
+#teacherAccess:hover {
+
+    background: #0b75d1;
+
+    border-color: #063b7a;
+
     transform: translateY(-3px);
+
 }
