@@ -1,0 +1,168 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+body {
+
+    background-image: url("../Media/homebg.jpg");
+
+    background-size: cover;
+
+    background-position: center;
+
+    background-repeat: no-repeat;
+
+    min-height: 100vh;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    padding: 20px;
+
+}
+
+
+.container {
+
+    width: 600px;
+
+    max-width: 100%;
+
+    background: rgba(255, 255, 255, 0.12);
+
+    backdrop-filter: blur(15px);
+
+    border-radius: 20px;
+
+    padding: 30px;
+
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.35);
+
+}
+
+
+h1 {
+
+    color: white;
+
+    text-align: center;
+
+    margin-bottom: 10px;
+
+}
+
+
+hr {
+
+    margin-bottom: 25px;
+
+}
+
+
+form {
+
+    background: white;
+
+    padding: 25px;
+
+    border-radius: 15px;
+
+}
+
+
+label {
+
+    display: block;
+
+    margin-bottom: 7px;
+
+    font-weight: bold;
+
+    color: #222;
+
+}
+
+
+input,
+textarea,
+select {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1.5px solid #a8a8a8;
+    border-radius: 8px;
+    font-size: 16px;
+    outline: none;
+    background: white;
+
+}
+
+
+textarea {
+
+    resize: vertical;
+
+}
+
+
+.buttons {
+
+    display: flex;
+
+    gap: 12px;
+
+    margin-top: 5px;
+
+}
+
+
+.buttons button {
+
+    flex: 1;
+
+    padding: 13px;
+
+    border: none;
+
+    border-radius: 8px;
+
+    font-size: 16px;
+
+    cursor: pointer;
+
+}
+
+
+#updateBtn {
+
+    background: #1e90ff;
+
+    color: white;
+
+}
+
+
+#cancelBtn {
+
+    background: #ddd;
+
+    color: #222;
+
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+
+    border: 1.5px solid #1e90ff;
+
+    outline: none;
+
+}

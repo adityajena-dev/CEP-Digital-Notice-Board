@@ -3,16 +3,19 @@
 
     <head>
         <title>Home Page</title>
-        <link rel="stylesheet" href="HA.css">
+        <link rel="stylesheet" href="../CSS/teacher.css">
     </head>
 
     <body>
-        <p>Notice Title: </p>
-        <input type="text" id="title">
+        <div class="container">
+            <h1>Create Notice</h1>
+            <hr>
+            <p>Notice Title: </p>
+            <input type="text" id="title">
                 <br>
 
         <p>Description: </p>
-        <input type="text" id="description">
+        <textarea id="description" placeholder="Enter notice description"></textarea>
         <br><br>
 
         <label for="category">Category: </label>
@@ -32,13 +35,12 @@
         <br><br>
 
         <button id="postBtn">Post Notice</button>
-        <br><br>
-
-        <script src="HA.js"></script>
-
-        <a href="SA.html">
-        <button> View Notices </button>
+        <a id="manageLink" href="manage.html">
+        <button id="manageBtn">Manage Notices</button>
         </a>
+
+       <script src="../JS/teacher.js"></script>
+        </div>
     </body>
 
 </html>

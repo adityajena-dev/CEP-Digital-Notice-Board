@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+    <title>Edit Notice</title>
+
+    <link rel="stylesheet" href="../CSS/edit.css">
+
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>✏ Edit Notice</h1>
+
+    <hr>
+
+    <form id="editForm">
+
+        <label for="title">Title</label>
+
+        <input
+            type="text"
+            id="title"
+            required
+        >
+
+
+        <label for="description">Description</label>
+
+        <textarea
+            id="description"
+            rows="6"
+            required
+        ></textarea>
+
+
+        <label for="category">Category</label>
+
+        <select id="category">
+            <option>⚪ General</option>
+            <option>🔵 Exam</option>
+            <option>🟢 Event</option>
+            <option>🟡 Holiday</option>
+            <option>🔴 Emergency</option>
+            <option>🟣 Assignment</option>
+        </select>
+
+
+        <label for="deadline">Deadline</label>
+
+        <input
+            type="date"
+            id="deadline"
+            required
+        >
+
+
+        <div class="buttons">
+
+            <button type="submit" id="updateBtn">
+                Update Notice
+            </button>
+
+            <button
+                type="button"
+                id="cancelBtn"
+            >
+                Cancel
+            </button>
+
+        </div>
+
+    </form>
+
+</div>
+
+<script src="../JS/edit.js"></script>
+
+</body>
+
+</html>

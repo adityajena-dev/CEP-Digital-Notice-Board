@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+    <title>Digital Notice Board</title>
+
+    <link rel="stylesheet" href="../CSS/home.css">
+
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1 id="welcomeTitle">
+        Welcome to the Digital Notice Board!
+    </h1>
+
+    <hr id="line">
+
+
+    <!-- ======================== -->
+    <!-- MAIN BUTTONS -->
+    <!-- ======================== -->
+
+    <button id="createBtn">
+        Create Group
+    </button>
+
+    <br>
+
+    <button id="joinBtn">
+        Join Group
+    </button>
+
+    <br>
+
+    <button id="teacherBtn">
+        Teacher Access
+    </button>
+
+
+    <!-- ======================== -->
+    <!-- CREATE GROUP -->
+    <!-- ======================== -->
+
+    <div id="createForm" style="display:none;">
+
+        <h2 id="createTitle">
+            Create a New Group
+        </h2>
+
+        <hr id="createLine">
+
+        <input
+            type="text"
+            id="groupName"
+            placeholder="Enter Group Name"
+        >
+
+        <br>
+
+        <input
+    type="text"
+    id="groupCode"
+    placeholder="Enter Group Code"
+>
+
+<br>
+
+<input
+    type="password"
+    id="teacherPassword"
+    placeholder="Create Teacher Password"
+>
+
+<br>
+
+<button id="create">
+    Create
+</button>
+
+    </div>
+
+
+    <!-- ======================== -->
+    <!-- JOIN GROUP -->
+    <!-- ======================== -->
+
+    <div id="joinForm" style="display:none;">
+
+        <h2 id="joinTitle">
+            Join Group
+        </h2>
+
+        <hr id="joinLine">
+
+        <input
+            type="text"
+            id="joinCode"
+            placeholder="Enter Group Code"
+        >
+
+        <br>
+        <br>
+
+        <button id="join">
+            Join
+        </button>
+
+    </div>
+
+
+    <!-- ======================== -->
+    <!-- TEACHER ACCESS -->
+    <!-- ======================== -->
+
+    <div id="teacherForm" style="display:none;">
+
+        <h2 id="teacherTitle">
+            Teacher Access
+        </h2>
+
+        <hr id="teacherLine">
+
+        <input
+    type="text"
+    id="teacherCode"
+    placeholder="Enter Group Code"
+>
+
+<br>
+
+<input
+    type="password"
+    id="teacherPasswordAccess"
+    placeholder="Enter Teacher Password"
+>
+
+<br>
+<br>
+
+<button id="teacherAccess">
+    Enter Group
+</button>
+
+    </div>
+
+
+</div>
+
+
+<script src="../JS/home.js"></script>
+
+</body>
+
+</html>

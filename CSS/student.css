@@ -1,0 +1,230 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+body {
+
+    background-image: url("../Media/homebg.jpg");
+
+    background-size: cover;
+
+    background-position: center;
+
+    background-repeat: no-repeat;
+
+    min-height: 100vh;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    padding: 20px;
+
+}
+
+#teacherNoticeContainer {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 20px;
+
+}
+
+
+.container {
+
+    width: 850px;
+
+    max-width: 100%;
+
+    background: rgba(255, 255, 255, 0.12);
+
+    backdrop-filter: blur(15px);
+
+    border-radius: 20px;
+
+    padding: 30px;
+
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.35);
+
+}
+
+
+h1 {
+
+    color: white;
+
+    text-align: center;
+
+    margin-bottom: 10px;
+
+}
+
+
+hr {
+
+    margin-bottom: 25px;
+
+}
+
+
+#noticeContainer {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 20px;
+
+}
+
+
+/* ======================== */
+/* NOTICE CARD */
+/* ======================== */
+
+.notice-card {
+
+    background: white;
+
+    color: #222;
+
+    border-radius: 15px;
+
+    padding: 20px;
+
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.25);
+
+}
+
+
+/* Notice Title */
+
+.notice-card h2 {
+
+    color: #0b4ea2;
+
+    margin-bottom: 12px;
+
+    font-size: 28px;
+
+}
+
+
+/* Category */
+
+.notice-card .category {
+
+    color: #1e90ff;
+
+    font-weight: bold;
+
+    margin-bottom: 10px;
+
+}
+
+
+/* Date */
+
+.notice-card .date {
+
+    color: #777;
+
+    font-size: 15px;
+
+    margin-bottom: 10px;
+
+}
+
+
+/* Description */
+
+.notice-card .description {
+
+    line-height: 1.5;
+
+    font-size: 17px;
+
+}
+
+
+/* ======================== */
+/* BACK BUTTON */
+/* ======================== */
+
+#backBtn {
+
+    margin-top: 25px;
+
+    width: 100%;
+
+    padding: 14px;
+
+    border: none;
+
+    border-radius: 10px;
+
+    background: #1e90ff;
+
+    color: white;
+
+    font-size: 17px;
+
+    cursor: pointer;
+
+}
+
+.notice-card button {
+
+    padding: 9px 16px;
+
+    border: none;
+
+    border-radius: 7px;
+
+    font-size: 14px;
+
+    cursor: pointer;
+
+    margin-top: 10px;
+
+    margin-right: 8px;
+
+}
+
+.notice-card button:first-of-type {
+
+    background: #1e90ff;
+
+    color: white;
+
+}
+
+.notice-card button:last-of-type {
+
+    background: #e74c3c;
+
+    color: white;
+
+}
+
+.notice-card button:first-of-type:hover {
+
+    background: #0b75d1;
+
+}
+
+
+.notice-card button:last-of-type:hover {
+
+    background: #c0392b;
+
+}

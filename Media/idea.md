@@ -1,2 +1,0 @@
-- After Deadline the Notices Should be Disappear
-- Deleting notices
