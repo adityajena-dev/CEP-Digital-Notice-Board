@@ -1,3 +1,6 @@
+const API_URL =
+    "https://cep-digital-notice-board-backend.onrender.com";
+
 const editForm =
     document.getElementById("editForm");
 
@@ -38,7 +41,7 @@ async function loadNotice() {
 
         const response =
             await fetch(
-                `http://localhost:3000/api/notices?groupCode=${encodeURIComponent(groupCode)}`
+                `${API_URL}/api/notices?groupCode=${encodeURIComponent(groupCode)}`
             );
 
 
@@ -172,7 +175,7 @@ editForm.addEventListener("submit", async (event) => {
 
         const response =
             await fetch(
-                `http://localhost:3000/api/notices/${noticeId}`,
+                `${API_URL}/api/notices/${noticeId}`,
                 {
 
                     method: "PUT",

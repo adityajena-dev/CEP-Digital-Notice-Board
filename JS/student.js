@@ -1,3 +1,6 @@
+const API_URL =
+    "https://cep-digital-notice-board-backend.onrender.com";
+
 const noticeContainer =
     document.getElementById("noticeContainer");
 
@@ -25,7 +28,7 @@ async function loadNotices() {
     try {
 
         const response = await fetch(
-            `http://localhost:3000/api/notices?groupCode=${encodeURIComponent(groupCode)}`
+            `${API_URL}/api/notices?groupCode=${encodeURIComponent(groupCode)}`
         );
 
         if (!response.ok) {

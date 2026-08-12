@@ -1,3 +1,6 @@
+const API_URL =
+    "https://cep-digital-notice-board-backend.onrender.com";
+
 const create =
     document.getElementById("create");
 
@@ -71,7 +74,7 @@ create.addEventListener("click", async (event) => {
 
         const response =
             await fetch(
-                "http://localhost:3000/api/groups",
+                `${API_URL}/api/groups`,
                 {
 
                     method: "POST",
@@ -196,7 +199,7 @@ join.addEventListener("click", async (event) => {
 
         const response =
             await fetch(
-                "http://localhost:3000/api/groups/join",
+                `${API_URL}/api/groups/join`,
                 {
 
                     method: "POST",
@@ -368,7 +371,7 @@ teacherAccess.addEventListener(
 
             const response =
                 await fetch(
-                    "http://localhost:3000/api/groups/teacher-access",
+                    `${API_URL}/api/groups/teacher-access`,
                     {
 
                         method: "POST",

@@ -1,6 +1,8 @@
+const API_URL =
+    "https://cep-digital-notice-board-backend.onrender.com";
+
 const teacherNoticeContainer =
     document.getElementById("teacherNoticeContainer");
-
 
 const params =
     new URLSearchParams(window.location.search);
@@ -81,7 +83,7 @@ async function displayNotices() {
     try {
 
         const response = await fetch(
-            `http://localhost:3000/api/notices?groupCode=${encodeURIComponent(groupCode)}`
+            `${API_URL}/api/notices?groupCode=${encodeURIComponent(groupCode)}`
         );
 
 
@@ -193,7 +195,7 @@ async function deleteNotice(id) {
 
         const response =
             await fetch(
-                `http://localhost:3000/api/notices/${id}`,
+                `${API_URL}/api/notices/${id}`,
                 {
                     method: "DELETE"
                 }
@@ -323,7 +325,7 @@ saveEdit.addEventListener(
 
             const response =
                 await fetch(
-                    `http://localhost:3000/api/notices/${currentEditId}`,
+                    `${API_URL}/api/notices/${currentEditId}`,
                     {
 
                         method: "PUT",

@@ -1,3 +1,5 @@
+const API_URL =
+    "https://cep-digital-notice-board-backend.onrender.com";
 const postBtn = document.getElementById("postBtn");
 const manageBtn = document.getElementById("manageBtn");
 const teacherNoticeContainer = document.getElementById("teacherNoticeContainer");
@@ -95,7 +97,7 @@ postBtn.addEventListener("click", async (event) => {
     try {
 
         const response =
-            await fetch("http://localhost:3000/api/notices", {
+            await fetch(`${API_URL}/api/notices`,  {
 
                 method: "POST",
 
